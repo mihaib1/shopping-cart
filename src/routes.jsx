@@ -4,6 +4,7 @@ import Products from "./pages/Products"
 import ErrorPage from "./pages/ErrorPage"
 import Cart from "./pages/Cart"
 import Profile from "./pages/Profile"
+import Home from "./pages/Home"
 
 const routes = [
   {

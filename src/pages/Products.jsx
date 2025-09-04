@@ -23,6 +23,8 @@ export default function Products(){
         getProducts();
     }, [])
 
+    
+
     return(
         <>
             <Navbar></Navbar>

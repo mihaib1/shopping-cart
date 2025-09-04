@@ -1,0 +1,9 @@
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    margin: 5em;
+    border: solid .25rem;
+    border-radius: 1em;
+}
+
