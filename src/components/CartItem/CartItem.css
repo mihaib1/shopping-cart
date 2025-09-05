@@ -7,3 +7,24 @@
     border-radius: 1em;
 }
 
+.left-side{
+    display: flex;
+}
+
+.product-summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}

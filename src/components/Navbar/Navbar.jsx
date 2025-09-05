@@ -5,8 +5,7 @@ import { useContext } from 'react';
 
 
 export default function Navbar() {
-    const {setCartCount} = useContext(ShopContext);
-    let cartCount = setCartCount();
+    const { cartQuantity } = useContext(ShopContext);
     return (
         <nav className="nav">
             <Link to="/" className="site-title">Store Name</Link>
@@ -15,8 +14,11 @@ export default function Navbar() {
                 <li> <Link to="/about">About</Link> </li>
             </ul>
             <div className='nav-right'>
-                <div className='cart'> <Link to="/cart">Cart {cartCount ? cartCount : 0}</Link> </div>
-                <div className='profile'> <Link to="/profile">Profile</Link> </div>
+                <ul>
+                    <li> <Link to="/cart">Cart {cartQuantity ? cartQuantity : 0}</Link> </li>
+                    <li> <Link to="/profile">Profile</Link></li>
+                </ul>
+
             </div>
         </nav>
     )

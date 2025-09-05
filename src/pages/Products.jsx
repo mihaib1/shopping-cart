@@ -14,7 +14,6 @@ export default function Products(){
             throw new Error("HTTP Error: Status " + fetchProducts.status);
         }
         let products = await fetchProducts.json();
-        console.log(products);
         setWaiting(false);
         setProductsList(products);
     }
